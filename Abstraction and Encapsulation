@@ -1,0 +1,8 @@
+Breaking a task into small subtasks referred to as ABSTRACTION(these subtasks can then be integrated to complete that task).For Example
+:- Assembling a Car,where different parts made by different(maybe same) manufactures are used to get one final product, a car in this case
+
+In OOPS ENCAPSULATION is used to achieve ABSTRACTION.IN simple words ENCAPSULATION refers to the process of hiding implementation details
+(Laptop for example) As the hindi saying goes,"aam khayen guthliya na gine" is the perfect way to to explain ENCAPSULATION i.e. rather than
+going in depth in the working of an Abstracted task, we simply apply it for the purpose of its creation.Coming back to the example of assem
+-ly of a car,the parts used are assembled without going into complete depth(or a little) of the different parts used i.e. during assembly
+one has to follow only the working rules required for assembling without complete knowledge of how engine is made.

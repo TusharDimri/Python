@@ -1,0 +1,18 @@
+Q. Why we need to convert .py file to .exe file?
+ANS. The simplest answer to this question is that it allows users without python in their software to use our python
+software
+
+Q2. How to covert .py files to .exe files?
+ANS. Steps are:-
+
+1. Install python module pyinstaller in your system(pip install pyinstller).Note that it should be installed in the same
+directory in which your program is stored
+
+2. Type pyinstaller.yourfilename in the command prompt\shell in the directory the code is stored.It may take some time
+though.For creating a good software don't ignore warnings shown
+
+NOTE:- If you want your .exe file in simple compressed form,type the given code in the command prompt:-
+ pyinstaller --onefile yourfilename
+ Also, note that the exe file immediateley closes once the task is finished
+
+
