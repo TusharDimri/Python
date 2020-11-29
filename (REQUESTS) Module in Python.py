@@ -5,7 +5,7 @@
 import requests
 
 req1 = requests.get("https://financialmodelingprep.com/api/v3/cryptocurrency/BTC") #this is a get request
-print(req1.text) # prints the api of the given link
+print(req1.text) # prints the given parameter from the api of the given link
 print(req1.status_code) # Check "http status code" online to fine out meaning of different status codes
 
 # Given below is an example of post request(not a real time example)

@@ -134,7 +134,7 @@ if __name__ == "__main__":
             elif 'open  vs code' in query or 'vs code' in query:
                 print("Opening VS code for you sir")
                 speak("Opening VS code for you sir")
-                codepath = "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\Code"
+                codepath = "C:\\Users\\Tushar\\AppData\\Local\Programs\\Microsoft VS Code\\Code"
                 os.startfile(codepath)
                 print("Here it is sir")
                 speak("Here it is sir")
@@ -240,7 +240,7 @@ if __name__ == "__main__":
 
             elif 'open pycharm' in query or 'pycharm' in query:
                 speak("opening py charm for you sir")
-                path = "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.3.4\\bin\\pycharm64.exe"
+                path = "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.2\\binpycharm64.exe"
                 os.startfile(path)
                 speak("here it is, it may take some time though")
 
@@ -315,7 +315,7 @@ if __name__ == "__main__":
                     speak("Sir, Your input is wrong")
 
             elif 'open ms word' in query or 'open word' in query or 'ms word' in query:
-                wpath = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Office\\Microsoft Office Word 2007"
+                wpath = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Office 2013"
                 print("Opening MS Word for you Sir")
                 speak("Opening MS Word for you Sir")
                 os.startfile(wpath)

@@ -1,75 +1,89 @@
-#file io basics
-"""  "r" = open file for reading(default mode)
+# File IO basics
+"""  "r" = open file for reading (Default Mode)
      "w" = open file for writing
-     "X" = creates a file if already exists and fail if it already exists
-     "a" = adds\append more content to a file
-     "t" = text mode for text files(default mode)
+     "x" = creates a file if already exists and fail if it already exists
+     "a" = adds more content to a file
+     "t" = text mode for text files (Default Mode)
      "b" = binary mode
      "+" = read + write mode
 """
-#print(func1.__doc__)# it is the code to print doc string of a function func1(answer to question of the day)
+# print(func1.__doc__)  is the code to print doc string of a function func1(answer to question of the day)
 
-td = open("Tushar.txt")
-obj = td.read()
+
+#                              READING A FILE
+
+
+
+td = open("Tushar.txt") # td is a file pointer / file handle, open returns a file pointer for the file
+obj = td.read() # Complete file is printed (Check Output)
 print(obj)
 td.close()
 
-td = open("Tushar.txt")
-obj = td.read(3) #first 3 characters of tect file are accessed
+td = open("Tushar.txt", "rt")
+obj = td.read(3) # First 3 characters of text file are accessed
 print(obj)
-obj = td.read(3) #next 3 characters of tect file are accessed(check output)
+obj = td.read(3) # Next 3 characters of text file are accessed (check output)
 print(obj)
 td.close()
-"""above code shows the importance of closing a file after opening it"""
+""" Above code shows the importance of closing a file after opening it """
 
 td = open("Tushar.txt")
 obj = td.read(56666)
-print("2",obj)#obj gets ignored as 56666 is greater than the file's lenghth(check output)
+print("1", obj) # All character are printed as there are less than 56666 characters in the file(check output)
+obj = td.read(56666) # It reads the specified number of characters
+print("2", obj) # obj gets ignored as we have already accessed all the characters in the file(check output)
 td.close()
 
-td = open("Tushar.txt")# check output and compare it with the next chunk
+td = open("Tushar.txt") # check output and compare it with the next chunk/block of code (line 43-46)
+obj = td.read()
+for char in obj: # we will traverse each 'character' of the file using char variable/loop variable
+    print(char)
+td.close()
+
+td = open("Tushar.txt")
+for line in td: # We will traverse each 'line' of the file using line variable /loop variable
+    print(line, end="")
+td.close()
+
+# BUT THIS CHUNK OF (because of line 45 as read takes all the content of the file and we cannot use it later)
+td = open("Tushar.txt")
 obj = td.read()
 for line in obj:
     print(line)
 td.close()
-
-td = open("Tushar.txt")
-for line in td:
-    print (line,end="")
-td.close()
-
-#BUT THIS CHUNK OF (because of line 43)
-td = open("Tushar.txt")
-obj = td.read()
-for line in obj:
-    print(line)
-td.close()
-#WILL PRINT NOTHING
+# WILL PRINT NOTHING
 
 
 td = open("Tushar.txt")
-print(td.readline()) #prints one line of the file at a time
+print(td.readline())  # prints one line of the file at a time with newline character at the end of line
 td = open("Tushar.txt")
 print(td.readline())
-#check output (that space is beacause uf newline character at the end of line)
+# Check output (that space is because of newline character at the end of line which is part of the line)
 td.close()
 
 td = open("Tushar.txt")
-print(td.readlines())#prints a list whose elements are the lines of the text file
-#\n in the list shows the end of line of the file
+print(td.readlines()) # prints a list whose elements are the lines of the text file
+# \n in the list shows the end of line / newline character of the file
 td.close()
 
-#writing and appending in a text file
-td2 = open("Tushar2.txt","w")
+
+#                        WRITING TO A FILE
+
+
+
+# Writing and appending in a text file
+td2 = open("Tushar2.txt", "w")
 td2.write("Delhi is not far")
-# creates a file if it don"t exist and overwrites already existing files
+td2.write("\nSee You Again Later")
+# Creates a file if it doesn't exist and overwrites already existing files
 td2.close()
 
-td3= open("Tushar.txt","a")
-a=td3.write("\nViolin and Guitar are awesome")
+td3= open("Tushar.txt", "a")
+a = td3.write("\nViolin and Guitar are awesome")
+#  a contains the number of characters that we wrote in the file.
 print(a)
 td3.close()
 
-td4= open("Tushar2.txt","r+")#Handle both read and write mode
+td4 = open("Tushar2.txt", "r+") # Handles both read and write mode
 print(td4.read())
 td4.write("\nKeep Rocking")

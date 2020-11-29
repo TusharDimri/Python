@@ -1,4 +1,5 @@
-# The code given below is to print a list containing multiples of 3 which are less than 100 using 3 different methods
+# The code given below is to print a list containing multiples of 3 which are less than 100 using 3
+# different methods
 
 # Method 1
 
@@ -44,10 +45,12 @@ print(dict2)
 print("\n")
 print(dict3)
 print("\n")
+
 # We can also use Set Comprehensions in Python
 
-dresses = {dress for dress in ["dress 1", "dress 1", "dress 2", "dress 3", "dress 2", "dress 3"]}
-print(dresses)  # note that sets don't contain repeated values
+dr = ["dress 1", "dress 1", "dress 2", "dress 3", "dress 2", "dress 3"]
+dresses = {dress for dress in dr}
+print(dresses)  # Note that sets don't contain repeated values
 print("\n")
 
 # Generator Comprehensions in Python

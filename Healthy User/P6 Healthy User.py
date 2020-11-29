@@ -69,11 +69,11 @@ if __name__ == '__main__':
     wish_me()
     speak("Mr Dimri, i hope you didn't forget about your skincare and workout routine")
     for hour in range(0, 25):
-        time.sleep(1800)
+        time.sleep(10)
         reminder("Water.mp3", "D")
-        time.sleep(900)
+        time.sleep(5)
         reminder("Eyes.mp3", "E")
-        time.sleep(900)
+        time.sleep(5)
         reminder("Physical.mp3", "P")
 
 """

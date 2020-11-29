@@ -1,4 +1,4 @@
-var1 = "Hello "
+var1 = "Hello"
 var2 = 4
 var3 = 36.4
 print(type(var1))
@@ -12,7 +12,7 @@ print(num1+num2)
 print(int(num1)+int(num2))
 """ other type casting functions are:
 float() 
-string()
+str()
 ,etc
 """
 print(var1*var2)

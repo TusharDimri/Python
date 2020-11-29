@@ -1,0 +1,2 @@
+User drank water at 2020-06-22 15:32:53.358761 
+User did eye training at 2020-06-22 15:33:03.726307 

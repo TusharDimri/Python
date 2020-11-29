@@ -1,29 +1,35 @@
-# Decorators In Python modify the functionality of a function
+# Decorators in Python are used  modify the functionality of a function
 
 def func():
     print("LETS ROCK")
 
-func2 = func
-del func #this deletes func Function
+func2 = func  # Assigning func to func2
+del func  # This deletes function 'func'
 func2()
 
-# a function returning another function
-def funcret(num):
+# A function returning another function
+def funcret(num):  # The name funcret implies function returner
     if num == 0:
-        return print #this return built in function print
+        return print  # This return built in function print
     else:
-        return sum   #this return built in function sum
+        return int   # This return built in function sum
 a = funcret(0)
-b = funcret(1)
 print(a)
-print(b)
+a("Hii")
 
-#function as an argument of another function
+b = funcret(1)
+print(b)
+c = b("21")
+c = c + 1
+print(c)
+
+
+# Function as an argument of another function
 
 def executor(func):
     func("this")
 
-executor(print) #print function is passed as an argument to the function executor(this evaluates to = print("this") )
+executor(print)  # print function is passed as an argument to the function executor(this evaluates to = print("this") )
 
 # DECORATORS
 
@@ -33,12 +39,14 @@ def dec1(func1):
         func1()
         print("Executed")
     return nowexe()
-def task():#check output
+
+def task(): # Check Output
     print("This Is The Task To Be Executed")
-dec1(task)
-# shortcut for line 38 using decorators
-@dec1  #this is a decorator
+task = dec1(task) # Here, function task is passed as a argument to function dec1
+task()
+# Shortcut for line 46 and 46 using decorators
+@dec1  # This is a decorator
 def task():
-     print("This is the task to be done") # Decorator above is equivalent dec1(task)
+     print("This is the task to be done")  # Decorator above is equivalent dec1(task)
 
 

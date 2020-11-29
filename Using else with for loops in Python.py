@@ -5,7 +5,7 @@ else:
     print("This for loop ended properly")
 
 """
-NOTE that else will work after for loop will execute only if for loop ends normally i.e. without any break statements
+NOTE that else block will work after for loop will execute only if for loop ends normally i.e. without any break statements
 One application of else with for loop is during linear search    
 """
 

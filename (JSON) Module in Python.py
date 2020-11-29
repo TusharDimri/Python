@@ -28,7 +28,7 @@ data2 = {
     "Loves" : "Himself"
 }
 
-details = json.dumps(data2, indent= 2, sort_keys=True) # Details is now in javascript
+details = json.dumps(data2, indent= 2, sort_keys=True) # Details is now a json string.
 print(details)
 print(type(details))
 

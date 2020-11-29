@@ -14,11 +14,12 @@ print(list)#list are mutable i.e. they can change
 tp =(1,5,3,7,10)
 print(tp)
 """tp(1)=8
-print(tp)"""#this will generate error because tuples are immutable i.e. they cannot change
-tp=(1,)#when tuple has only 1 element thean a ',' is added after the element
+print(tp)"""
+#this will generate error because tuples are immutable i.e. they cannot change
+tp=(1,) # When tuple has only 1 element thean a ',' is added after the element
 print(tp)
 #swapping traditionally
-""" a & b are two int variables with differemt values
+""" a & b are two int variables with different values
 temp=a
 a=b
 b=temp"""
